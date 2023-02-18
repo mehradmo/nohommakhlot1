@@ -5,7 +5,7 @@ body {
 }
 
 .content {
-  position: relative; 
+  position: relative;
   /* display: flex;
   justify-content: center; 
   align-items: center; */
@@ -91,7 +91,7 @@ button img {
   height: 20px;
 }
 
-button .a {
+button .q {
   position: absolute;
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
@@ -99,7 +99,6 @@ button .a {
   text-decoration: none;
   font-size: 25px;
   width: 200px;
-  text-align: center;
   left: 20%;
   top: 4px;
   color: white;
@@ -110,4 +109,87 @@ button .last {
   width: 25px;
   height: 25px;
   left: -80px;
+}
+
+@media(max-width:675px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    position: relative;
+    width: 375px;
+    margin: 10px;
+  }
+
+  .content img {
+    position: absolute;
+    width: 300px;
+    top: -200px;
+    left: 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+
+  .content .a {
+    position: absolute;
+    top: 60%;
+    left: 58px;
+  }
+
+  .content .b {
+    position: absolute;
+    top: 280px;
+    left: 58px;
+    font-size: 40px;
+  }
+
+  .content .c {
+    position: absolute;
+    top: 97%;
+    left: 58px;
+  }
+
+  .content .d {
+    position: absolute;
+    top: 120%;
+    left: 58px;
+    font-size: 35px;
+  }
+
+  .content .e {
+    position: absolute;
+    top: 123%;
+    left: 208px;
+  }
+
+  hr {
+    position: absolute;
+    top: 128%;
+    left: 208px;
+  }
+
+  .content button {
+    position: absolute;
+    top: 140%;
+    left: 58px;
+    width: 85%;
+    height: 11%;
+    padding: 0;
+  }
+
+  .content button .q {
+    position: absolute;
+    top: 10px;
+  }
+
+  .content button .last {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 5%;
+  }
 }
